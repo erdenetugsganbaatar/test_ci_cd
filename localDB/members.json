@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Bolor Dulambayar",
+    "position": "Manager & Management Accountant",
+    "bio": {
+      "joined_at": "Has been working as a manager at Nasha Tech LLC since 2019.",
+      "experience": "She graduated from University of Humanities Mongolia with a bachelor’s degree in Journalism and is currently pursuing a Master’s degree in Management Leadership from University of Humanities. She also studied at New College of Nottingham. Since age 17, she'd been worked as a journalist, marketing manager at the TM television for 10 years. Also, she's 2 years of experience as a PR manager and a marketing specialist at the Public Relations Department of <a href='http://mik.mn/mn/' target='_blank' rel='noopener'>Mongolian Mortgage Corporation</a> (Housing Finance Company)",
+      "additional": "Experienced in Marketing planning, Facebook Ads, Social content creating."
+    },
+    "facts": {
+      "cook": "- Almost cook 👩‍🍳",
+      "mom": "- Mom of 3 👧",
+      "art": "- Video commercial art director 🎬, loves commercial set preparing"
+    }
+  },
+  {
+    "name": "Chinbat Chindegsuren",
+    "position": "Founder & Engineering lead",
+    "bio": {
+      "position": "Founder of Nasha Tech LLC, Engineering team lead.",
+      "experience": "He graduated from Japan's <a href='https://www.uec.ac.jp/eng/' target='_blank' rel='noopener'>University of Information and Communication</a> with a degree in 'Information Technology Management' on a scholarship from the Government of Japan. Then he worked as a <a href='https://careerfoundry.com/en/blog/web-development/what-is-a-full-stack-web-developer/' target='_blank' rel='noopener'>Fullstack Engineer</a> for four years in <a href='https://www.brainpad.co.jp/' target='_blank' rel='noopener'>Brainpad</a> which is a digital marketing AI-based business in Japan, and returned to Mongolia in 2018 to establish Nasha Tech LLC."
+    },
+    "facts": {
+      "born": "- Born and spent his childhood days in Bornuur sum Tov province 🏞️",
+      "math": "- Has a silver medal from the national math olympiad 🥈",
+      "dance": "- When he was a child he's a very talented dancer and also got a 'Talent' medal from The Children's Palace Mongolia 🕺"
+    }
+  }
+]
