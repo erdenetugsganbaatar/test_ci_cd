@@ -9,3 +9,6 @@ apps:
     text-resources:
       - path: "*.vue"
         format: vue-hardcoded
+text-resources:
+  - path: custom/lng/*.json
+    format: nested-key-value
