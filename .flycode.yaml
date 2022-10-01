@@ -10,5 +10,5 @@ apps:
       - path: "*.vue"
         format: vue-hardcoded
 text-resources:
-  - path: custom/lng/*.json
+  - path: localDB/*.json
     format: nested-key-value
