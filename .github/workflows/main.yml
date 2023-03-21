@@ -19,8 +19,8 @@ jobs:
         id: check_files
         run: |
           echo "=============== list modified files ==============="
-          echo "{deploy_admin}::{false}" >> $GITHUB_OUTPUT
-          echo "{deploy_front}::{false}" >> $GITHUB_OUTPUT
+          echo "{deploy_admin}={false}" >> $GITHUB_OUTPUT
+          echo "{deploy_front}={false}" >> $GITHUB_OUTPUT
 
           git diff --name-only HEAD^ HEAD
 
@@ -31,10 +31,10 @@ jobs:
             echo $file
             if [[ $file != admin/* ]]; then
               echo "This modified file is not under the admin folder. so we need to deploy front"
-              echo "{deploy_front}::{true}" >> $GITHUB_OUTPUT
+              echo "{deploy_front}={true}" >> $GITHUB_OUTPUT
             else
               echo "This modified file is not under the admin folder. so we need to deploy front"
-              echo "{deploy_admin}::{true}" >> $GITHUB_OUTPUT
+              echo "{deploy_admin}={true}" >> $GITHUB_OUTPUT
             fi
           done < files.txt
   build_front:
