@@ -33,13 +33,14 @@ jobs:
               echo "This modified file is not under the admin folder. so we need to deploy front"
               echo "deploy_front=true" >> $GITHUB_OUTPUT
             else
-              echo "This modified file is not under the admin folder. so we need to deploy front"
+              echo "This modified file is not under the admin folder. so we need to deploy admin"
               echo "deploy_admin=true" >> $GITHUB_OUTPUT
             fi
           done < files.txt
   build_front:
     runs-on: ubuntu-latest
     needs: check
+    if: needs.check.outputs.deploy_front == 'true'
     steps:
       - env:
           DEPLOY_FRONT: ${{needs.check.outputs.deploy_front}}
@@ -47,6 +48,7 @@ jobs:
   build_admin:
     runs-on: ubuntu-latest
     needs: check
+    if: needs.check.outputs.deploy_front == 'true'
     steps:
       - env:
           DEPLOY_ADMIN: ${{needs.check.outputs.deploy_admin}}
